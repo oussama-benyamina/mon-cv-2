@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkCV - Mon CV en Ligne</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mon CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><button onclick="showSection(1)" class="btn btn-primary">À Propos</button></li>
+                    <li class="nav-item"><button onclick="showSection(2)" class="btn btn-primary">Compétences</button></li>
+                    <li class="nav-item"><button onclick="showSection(3)" class="btn btn-primary">Expérience</button></li>
+                    <li class="nav-item"><button onclick="showSection(4)" class="btn btn-primary">Portfolio</button></li>
+                    <li class="nav-item"><button onclick="showSection(5)" class="btn btn-primary">Contact</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div id="section1" class="section active bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="./imag/mon-image.jpg" alt="Votre Photo" class="img-fluid rounded-circle"></div>
+                <div class="col-md-8">
+                    <h2>Benyamina Oussama</h2>
+                    <p>Je suis un développeur web passionné...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="section">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Développement Web</h4>
+                    <div class="progress"><div class="progress-bar bg-success" style="width: 90%;">90%</div></div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Design UI/UX</h4>
+                    <div class="progress"><div class="progress-bar bg-info" style="width: 75%;">75%</div></div>
+                </div>
+            </div>
+            <h5>Langages</h5>
+            <div class="d-flex flex-wrap">
+                <div class="col-md-6">
+                    <img src="./imag/html.png" alt="HTML" class="img-fluid rounded">
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank"><h5 class="text-primary">HTML Tutorial</h5></a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./imag/css.jpeg" alt="CSS" class="img-fluid rounded">
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank"><h5 class="text-primary">CSS Tutorial</h5></a>
+                </div>
+                <!-- Repeat for other languages -->
+            </div>
+            <h4>Autres</h4>
+            <ul class="list-unstyled">
+                <li>Développement d'applications web et mobiles</li>
+                <li>Intégration de designs complexes</li>
+                <li>Gestion de bases de données avec SQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="section3" class="section bg-dark text-white">
+        <div class="container">
+            <h3>Expérience Professionnelle</h3>
+            <div class="timeline">
+                <h4>Développeur web - web mobile (DWWM)</h4>
+                <ul>
+                    <li>
+                        <strong>Stage Développeur</strong> - Entreprise La Plateforme<br>
+                        <em>2023 - juillet 2025</em>
+                        <p>Développement de sites web responsifs en utilisant les dernières technologies...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4" class="section">
+        <div class="container">
+            <a href="https://oussama-benyamina.students-laplateforme.io/"><h2>Portfolio</h2></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./imag/project1.png" alt="Projet 1" class="img-fluid">
+                    <div class="portfolio-overlay"><h4>Projet 1</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section5" class="section bg-dark text-white">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> Adresse: 11 rue Saint Dominique, 13001 Marseille</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:oussama.benyamina@laplateforme.io">oussama.benyamina@laplateforme.io</a></p>
+                <p><i class="fas fa-phone"></i> 0774666255</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/oussama-benyamina" target="_blank">github.com/oussama-benyamina</a></p>
+                <p><i class="fas fa-globe"></i> <a href="https://oussama-benyamina.students-laplateforme.io" target="_blank">Portfolio</a></p>
+            </address>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function showSection(sectionNumber) {
+            document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+            document.getElementById('section' + sectionNumber).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
