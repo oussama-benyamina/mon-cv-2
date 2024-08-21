@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="./imag/mon-image.jpg" alt="Votre Photo" class="img-fluid rounded-circle">
+                    <img src="./images/mon-image.jpg" alt="Votre Photo" class="img-fluid rounded-circle">
                 </div>
                 <div class="col-md-8">
                     <h2>Benyamina Oussama</h2>

@@ -39,11 +39,11 @@
                         
                     </li>
                     <li class="nav-item">
-                        <button onclick="showSection(4)" class="btn btn-primary">Portfolio</button>
+                        <button onclick="showSection(5)" class="btn btn-primary">Contact</button>
                         
                     </li>
                     <li class="nav-item">
-                        <button onclick="showSection(5)" class="btn btn-primary">Contact</button>
+                       <a href="https://oussama-benyamina.students-laplateforme.io/"> <button class="btn btn-primary">Portfolio</button></a>
                        
                     </li>
                 </ul>
@@ -56,78 +56,15 @@
    
     <?php include 'includes/section1.php'; ?>
     <?php include 'includes/section2.php'; ?>
-    
-    <!-- Experience Section -->
-    <div id="section3" class="section bg-dark text-white">
-        <div class="container">
-            <h3 class="section-title">Expérience Professionnelle</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Développeur web - web mobile (DWWM)</h4> 
-                </div>
-                        <ul>
-                            
-                            <li>
-                                <strong>Stage Développeur</strong> - Entreprise La Plateforme<br>
-                                 <em>2023 - juillet 2025</em>
-                                 <p>Développement de sites web responsifs en utilisant les dernières technologies...</p>
-                                
-                                Création de sites web dynamiques en utilisant HTML, CSS, JavaScript, et PHP. Participation à des réunions de planification et coordination avec l'équipe de design.
-                            </li>
-                        </ul>
-                    
-    
-            </div>
-        </div>
-    </div>
+    <?php include 'includes/section3.php'; ?>
+    <?php include 'includes/section4.php'; ?>
+    <?php include 'includes/section5.php'; ?>
 
     <!-- Portfolio Section -->
-    <div id="section4" class="section">
-        <div class="container">
-            <a href="https://oussama-benyamina.students-laplateforme.io/"><h2>Portfolio</h2></a>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="./imag/project1.png" alt="Projet 1" class="img-fluid">
-                        <div class="portfolio-overlay">
-                            <h4>Projet 1</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Contact Section -->
-    <div id="section5" class="section bg-dark text-white">
-        <div class="container">
-            <h2>Contact</h2>
-             <!-- Contact Section -->
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Votre email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
     
-            <address>
-                <p><i class="fas fa-map-marker-alt"></i> Adresse: 11 rue Saint Dominique, 13001 Marseille</p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:oussama.benyamina@laplateforme.io">oussama.benyamina@laplateforme.io</a></p>
-                <p><i class="fas fa-phone"></i> Téléphone: 0774666255</p>
-                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/oussama-benyamina" target="_blank">github.com/oussama-benyamina</a></p>
-                <p><i class="fas fa-globe"></i> Portfolio: <a href="https://oussama-benyamina.students-laplateforme.io" target="_blank">oussama-benyamina.students-laplateforme.io</a></p>
-            </address>
-        </div>
-    </div>
 
     <!-- Back to Top Button -->
     <a href="#" class="btn btn-primary back-to-top">
