@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Oussama Benyamina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-picture" id="profile-pic">
+                <img src="./images/mon-image.JPG" alt="Oussama Benyamina">
+            </div>
+            <h1>OUSSAMA BENYAMINA</h1>
+        </header>
+
+        <nav>
+            <button class="nav-btn" data-section="contact">Contact</button>
+            <button class="nav-btn" data-section="skills">Compétences</button>
+            <button class="nav-btn" data-section="education">Formation</button>
+            <button class="nav-btn" data-section="experience">Expérience</button>
+        </nav>
+
+        <div class="section contact" id="contact">
+            <h2><i class="fas fa-address-card"></i> Contact</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 11 Rue Saint Dominique, 13001 Marseille</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:Oussama.benyamina@laplateforme.io">Oussama.benyamina@laplateforme.io</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+33774666255">+33 7 74 66 62 55</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/oussama-benyamina">GitHub</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://oussama-benyamina.students-laplateforme.io/">Portfolio</a></p>
+        </div>
+        
+        <div class="section skills" id="skills">
+            <h2><i class="fas fa-code"></i> Compétences Techniques</h2>
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML
+                    <div class="skill-bar"><div class="skill-level" data-skill="HTML"></div></div>
+                </li>
+                <li><i class="fab fa-css3-alt"></i> CSS
+                    <div class="skill-bar"><div class="skill-level" data-skill="CSS"></div></div>
+                </li>
+                <li><i class="fab fa-js-square"></i> JavaScript
+                    <div class="skill-bar"><div class="skill-level" data-skill="JavaScript"></div></div>
+                </li>
+                <li><i class="fab fa-python"></i> Python
+                    <div class="skill-bar"><div class="skill-level" data-skill="Python"></div></div>
+                </li>
+                <li><i class="fab fa-php"></i> PHP
+                    <div class="skill-bar"><div class="skill-level" data-skill="PHP"></div></div>
+                </li>
+                <li><i class="fas fa-database"></i> SQL
+                    <div class="skill-bar"><div class="skill-level" data-skill="SQL"></div></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section education" id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+            <ul>
+                <li><strong>Baccalauréat Général</strong>, Lycée Chlef Mohamed, 2020</li>
+                <li><strong>Bachelor IT - Information Technology</strong>, École La Plateforme, 2023 - 2024</li>
+            </ul>
+        </div>
+        
+        <div class="section experience" id="experience">
+            <h2><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+            <ul>
+                <li><strong>Chauffeur Livreur</strong>, International Shipments Delivery Express, 2022 - Présent</li>
+            </ul>
+        </div>
+
+        <!-- Carousel Section -->
+<div class="carousel">
+    <h2><i class="fas fa-project-diagram"></i> Mes Projets</h2>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="project-card">
+                <h3>Voyage</h3>
+                <p>Un site web de voyage interactif</p>
+                <a href="https://oussama-benyamina.students-laplateforme.io/plesk/voyage/index.php" target="_blank" class="project-link">Voir le projet</a>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="project-card">
+                <h3>App Favorites</h3>
+                <p>Une application de gestion de favoris</p>
+                <a href="https://oussama-benyamina.students-laplateforme.io/plesk/App%20Favorites/index.html" target="_blank" class="project-link">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-button prev" id="prevBtn">&#10094;</button>
+    <button class="carousel-button next" id="nextBtn">&#10095;</button>
+</div>
+
+        <!-- Social Media Section -->
+        <div class="social-media">
+            <h2><i class="fas fa-share-alt"></i> Suivez-moi</h2>
+            <a href="https://www.linkedin.com/in/oussama-benyamina-a359b42b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/oussamabeny261" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/vivaana.vivaeuro" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mc_ouss13/profilecard/?igsh=MXc0amJiNnoxbjA3Mg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+    <div id="cursor"></div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
