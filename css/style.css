@@ -321,3 +321,31 @@ nav {
 .next {
     right: 10px;
 }
+
+
+@media print {
+    /* General print styles */
+    body {
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adjust container for A4 size */
+    .container {
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        margin: auto;
+    }
+
+    /* Hide navigation bar in print */
+    nav {
+        display: none;
+    }
+
+    /* Adjust other elements for print if necessary */
+    .section {
+        page-break-before: auto;
+        page-break-after: auto;
+    }
+}
